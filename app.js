@@ -46,6 +46,64 @@
     }, 1000)
 }
 {
+    const days = document.querySelector(".days");
+    function currentDay(){
+        let date = new Date();
+        let day = date.getDate();
+        days.innerHTML=day
+    }
+    currentDay()
+}
+{
+    const month = document.querySelector(".month");
+    function currentDay(){
+        let date = new Date();
+        let months = date.getMonth();
+        switch(months){
+                case 0 :
+                    month.innerHTML="Yanvar"
+                    break
+                case 1 :
+                    month.innerHTML="Fevral"
+                    break
+                case 2 :
+                    month.innerHTML="Mart"
+                    break
+                case 3 :
+                    month.innerHTML="Aprel"
+                    break
+                case 4 :
+                    month.innerHTML="May"
+                    break
+                case 5 :
+                    month.innerHTML="Iyun"
+                    break
+                case 6 :
+                    month.innerHTML="Iyul"
+                    break
+                case 7 :
+                    month.innerHTML="Avgust"
+                    break
+                case 8 :
+                    month.innerHTML="Sentyabr"
+                    break
+                case 9 :
+                    month.innerHTML="Oktyabr"
+                    break
+                case 10 :
+                    month.innerHTML="Noyabr"
+                    break
+                case 11 :
+                    month.innerHTML="Dekabr"
+                    break
+                    default:
+        }
+    }
+    currentDay()
+    
+
+}
+{
     // console.log("Masala-1")
     // function repeatStr (n, s) {
     //     return s.repeat(n)
