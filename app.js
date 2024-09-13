@@ -1,7 +1,37 @@
 {
-    
-    
-    
+    const day = document.querySelector(".day");
+    function currentDay(){
+        let date = new Date();
+        let days = date.getDay();
+        switch(days){
+                case 1 :
+                    day.innerHTML="Dushanba"
+                    break
+                case 2 :
+                    day.innerHTML="Seshanba"
+                    break
+                case 3 :
+                    day.innerHTML="Chorshanba"
+                    break
+                case 4 :
+                    day.innerHTML="Payshanba"
+                    break
+                case 5 :
+                    day.innerHTML="Juma"
+                    break
+                case 6 :
+                    day.innerHTML="Shanba"
+                    break
+                case 7 :
+                    day.innerHTML="Yakshanba"
+                    break
+                    default:
+        }
+    }
+    currentDay()
+     
+}
+{
     const time = document.querySelector(".time");
     function currentTime(){
         let date = new Date();
@@ -14,7 +44,6 @@
     setInterval(()=>{
         currentTime()
     }, 1000)
-    
 }
 {
     // console.log("Masala-1")
