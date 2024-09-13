@@ -1,4 +1,22 @@
 {
+    
+    
+    
+    const time = document.querySelector(".time");
+    function currentTime(){
+        let date = new Date();
+        let hour = date.getHours().toString().padStart(2, "0")
+        let minute = date.getMinutes().toString().padStart(2, "0")
+        let seconde = date.getSeconds().toString().padStart(2, "0")
+        time.innerHTML=`${hour}:${minute}:${seconde}`
+    }
+    currentTime()
+    setInterval(()=>{
+        currentTime()
+    }, 1000)
+    
+}
+{
     // console.log("Masala-1")
     // function repeatStr (n, s) {
     //     return s.repeat(n)
